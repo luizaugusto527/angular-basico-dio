@@ -13,23 +13,23 @@ export class CoursesComponent implements OnInit {
   ngOnInit(): void {
     this.courseList = [{
       id: 1,
-      name:'Angular',
-      imageUrl:'',
+      name:'Angular forms',
+      imageUrl:'/assets/images/forms.png',
       price:99.99,
       code:"XPS-5935",
       duration:"120 min",
-      rating:4.0,
+      rating:4.5,
       releaseDate:"November , 2 , 2021"
 
     },
     {
       id: 2,
-      name:'HTML',
-      imageUrl:'',
+      name:'Angular http',
+      imageUrl:'/assets/images/http.png',
       price:25.00,
       code:"LKL-4021",
       duration:"60 min",
-      rating:4.5,
+      rating:4,
       releaseDate:"December , 4 , 2021"
 
     }
