@@ -8,7 +8,9 @@ export class CoursesService {
   getcursos():Course[]{
     return CURSOS
   }
-
+  retriveById(id:number){
+    return CURSOS.find((courseIterator:Course)=>courseIterator.id === id)
+  }
   constructor() { }
 }
 const CURSOS:Course[] = [
