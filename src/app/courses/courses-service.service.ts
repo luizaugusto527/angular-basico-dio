@@ -12,6 +12,12 @@ export class CoursesService {
     return CURSOS.find((courseIterator:Course)=>courseIterator.id === id)
   }
   constructor() { }
+  save(course:Course):void{
+    if(course.id){
+        const index = CURSOS.findIndex((courseInterator:Course)=>courseInterator.id === course.id)
+        CURSOS[index] = course;
+    }
+}
 }
 const CURSOS:Course[] = [
   {

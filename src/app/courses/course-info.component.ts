@@ -15,4 +15,8 @@ import { CoursesService } from "./courses-service.service";
             this.course = this.courseService.retriveById(+this.activeRoute.snapshot.paramMap.get('id')!)!
         }
 
+        save():void{
+            this.courseService.save(this.course)
+        }
+
     }
